@@ -6,11 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jackson.scrollview.MainActivity">
+    tools:context="com.jackson.scrollview.activity.ScrollerActivity">
 
-   <android.support.v7.widget.RecyclerView
-       android:id="@+id/recycleView"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    <com.jackson.scrollview.view.CustomView
+        android:id="@+id/customView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"/>
+
+
 
 </LinearLayout>
