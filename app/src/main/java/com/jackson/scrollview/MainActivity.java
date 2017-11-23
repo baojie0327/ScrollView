@@ -10,6 +10,7 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.jackson.scrollview.activity.DragActivity;
 import com.jackson.scrollview.activity.ScrollerActivity;
+import com.jackson.scrollview.activity.ViewDragHelperActivity;
 import com.jackson.scrollview.adapter.HomeAdapter;
 
 import java.util.ArrayList;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         mDatas.add("layout/off/scroll");
         mDatas.add("Scroller");
+        mDatas.add("ViewDragHelper");
 
         mHomeAdapter=new HomeAdapter(R.layout.item_home_layout,mDatas);
         mRecycleView.setAdapter(mHomeAdapter);
@@ -52,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         startActivity(new Intent(MainActivity.this, ScrollerActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(MainActivity.this, ViewDragHelperActivity.class));
                         break;
                 }
 
