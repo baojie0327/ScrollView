@@ -24,4 +24,38 @@ View滑动有六种滑动的方法，分别是：layout()、offsetLeftAndRight()
   
 ![](https://github.com/baojie0327/ScrollView/blob/master/image/1111.gif)
 
+
+
+ViewDragHelper的使用，大体可以分为以下三个步骤
+
+创建并初始化ViewDragHelper实例
+触摸相关的方法的调用
+ViewDragHelper.Callback实例的编写
+
+```
+private ViewDragHelper.Callback mCallback = new ViewDragHelper.Callback() {
+        @Override
+        public boolean tryCaptureView(View child, int pointerId) {
+            return true;
+        }
+
+        @Override
+        public int clampViewPositionHorizontal(View child, int left, int dx) {
+            return left;
+        }
+
+        @Override
+        public int clampViewPositionVertical(View child, int top, int dy) {
+            return top;
+        }
+
+    };
+   ```
+    
+  ![](https://github.com/baojie0327/ScrollView/blob/master/image/2222.gif)
+  
+   ![](https://github.com/baojie0327/ScrollView/blob/master/image/3333.gif)
+    
+    
+
  
