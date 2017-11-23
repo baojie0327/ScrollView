@@ -21,3 +21,5 @@ View滑动有六种滑动的方法，分别是：layout()、offsetLeftAndRight()
         return true;
     }
     ```
+    
+    ![](https://github.com/baojie0327/ScrollView/blob/master/image/1111.gif)
